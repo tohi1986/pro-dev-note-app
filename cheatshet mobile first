@@ -1,0 +1,25 @@
+PAGE:
+min-h-screen p-4
+
+COMPONENTS (header, footer, navbar...):
+flex items-center justify-between p-4
+
+SECTION(hero,features,about):
+w-full flex flex-col md:flex-row gap-6
+
+
+EXPLAINED;
+flex → layout
+flex-col → mobile stupac
+md:flex-row → desktop red
+
+items-center → vertikalno centriranje
+justify-between → lijevo + desno
+
+w-full → full width
+md:w-2/3 → uži layout na desktopu
+
+gap-6 → razmak između elemenata
+
+hidden md:flex → mobile hidden, desktop show
+md:hidden → mobile show, desktop hidden
