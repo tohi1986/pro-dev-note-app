@@ -1,0 +1,15 @@
+-npm i
+-postavis .env (kljuc i url supabase)
+-postavis config / supabase.ts
+-postavis file za catchanje svih errora ( utils / handleError.ts)
+-app.ts dodas route i postavis 
+-dodas controller
+-dodas services
+
+
+FE
+-browser router 
+-napravis page koji trebas 
+-napravis header da radi s pageom 
+-testiras
+-

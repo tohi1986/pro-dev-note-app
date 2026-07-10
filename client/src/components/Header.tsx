@@ -1,18 +1,21 @@
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
     <header className="bg-amber-800 font-semibold flex items-center justify-evenly p-4 border-b">
-        <h1>logo</h1>
-      {/* mobile menu icon */}
-      <button className="md:hidden">☰</button>
+      <h1>logo</h1>
 
-      {/* desktop menu */}
+      <button className="md:hidden">
+        ☰
+      </button>
+
       <nav className="hidden md:flex gap-6">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+
+        <Link to="/notes">Notes</Link>
       </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
