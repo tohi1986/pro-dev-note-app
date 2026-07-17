@@ -17,7 +17,7 @@ app.use('/api', notesRoutes)
 
 // test ruta
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", message: "backend radi" });
+  res.json({ status: "ok", message: "BE - working" });
 });
 
 export default app;

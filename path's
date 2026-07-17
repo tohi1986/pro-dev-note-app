@@ -1,15 +1,21 @@
+BE
 -npm i
 -postavis .env (kljuc i url supabase)
 -postavis config / supabase.ts
 -postavis file za catchanje svih errora ( utils / handleError.ts)
--app.ts dodas route i postavis 
+-app.ts dodas route i postavis i mozes odmah middleware
+-AUTH
 -dodas controller
 -dodas services
 
 
 FE
--browser router 
+-browser router
+-auth
+-protected routes
+-api 
+-tan stack
 -napravis page koji trebas 
--napravis header da radi s pageom 
+-napravis header da radi s pageom
+-par CRUD operacija 
 -testiras
--
