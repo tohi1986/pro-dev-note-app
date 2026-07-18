@@ -3,6 +3,10 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Notes from './pages/Notes'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import ProtectedRoute from './features/auth/components/ProtectedRoute'
+
 
 function App() {
   return (
@@ -12,7 +16,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/notes" element={<Notes />} />
+        <Route path="/notes" element={
+    <ProtectedRoute>
+      <Notes />
+    </ProtectedRoute>
+  }
+/>
+
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/login" element={<Login />}/>
       </Routes>
     </div>
   )
